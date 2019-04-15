@@ -1,9 +1,11 @@
 {
+  "homepage": "http://enanaky.github.io/catch-of-the-day",
   "name": "cotd",
   "version": "0.0.3",
   "private": true,
   "devDependencies": {
     "concurrently": "3.5.1",
+    "gh-pages": "^2.0.1",
     "react-scripts": "^1.1.4"
   },
   "dependencies": {
@@ -26,6 +28,8 @@
     "build": "npm install preact-cli && preact build",
     "eject": "react-scripts eject",
     "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
-    "styles:watch": "stylus -u autoprefixer-stylus -w ./src/css/style.styl -o ./src/css/style.css"
+    "styles:watch": "stylus -u autoprefixer-stylus -w ./src/css/style.styl -o ./src/css/style.css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
