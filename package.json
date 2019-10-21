@@ -19,7 +19,7 @@
     "react-transition-group": "^2.2.1",
     "serve": "^6.5.8",
     "stylus": "0.54.5",
-    "yarn": "^1.15.2"
+    "yarn": "^1.17.3"
   },
   "scripts": {
     "dev": "react-scripts start",
